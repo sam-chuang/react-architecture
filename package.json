@@ -1,7 +1,10 @@
 {
+  "name": "react-bumbag-app",
+  "version": "0.0.1",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
+    "build:docker": "cross-var docker build . -t $npm_package_name:$npm_package_version",
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx}\""
@@ -17,6 +20,7 @@
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.3",
     "bumbag": "^1.1.13",
+    "cross-var": "^1.1.0",
     "jest": "^26.2.2",
     "prettier": "^2.0.5",
     "react-router-dom": "^5.2.0",

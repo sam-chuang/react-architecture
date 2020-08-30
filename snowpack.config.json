@@ -1,4 +1,11 @@
 {
   "extends": "@snowpack/app-scripts-react",
-  "plugins": []
+  "plugins": [],
+  "mount": {
+    "public": "/",
+    "src": "/dist"
+  },
+  "buildOptions": {
+    "metaDir": "snowpack"
+  }
 }

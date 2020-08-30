@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  react-bumbag-app:
+    build: ./
+    image: react-bumbag-app
+    volumes:
+      - ./caddy/data:/data
+    ports:
+      - 80:80
+      - 443:443
