@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "prettier --check \"src/**/*.{js,jsx}\""
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.27",
+    "@emotion/core": "^10.0.35",
+    "@snowpack/app-scripts-react": "^1.10.0",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.3",
+    "bumbag": "^1.1.13",
+    "jest": "^26.2.2",
+    "prettier": "^2.0.5",
+    "react-router-dom": "^5.2.0",
+    "snowpack": "^2.9.0"
+  }
+}
