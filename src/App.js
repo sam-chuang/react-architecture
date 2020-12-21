@@ -2,9 +2,6 @@ import React, { useEffect, useMemo, useState, createContext } from "react"
 import { css } from "@emotion/core"
 import logo from "./logo.svg"
 import { Table, Button } from "bumbag"
-import Async, { useAsync } from "react-async"
-//import { useTable } from "react-table"
-import AsyncTable, { useAsyncTable } from "./table"
 import "./App.css"
 
 function App() {
@@ -18,15 +15,6 @@ function App() {
 
   return (
     <div className="App">
-      <Async deferFn={fetchData}>
-        {({ promise, run }) => {
-          return (
-            <AsyncTable fetchData={run} promise={promise} columns={columns}>
-              <TableContents />
-            </AsyncTable>
-          )
-        }}
-      </Async>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
